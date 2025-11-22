@@ -34,7 +34,7 @@ export default function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProp
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white dark:bg-gray-900 shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-white dark:bg-gray-900 shadow-md' : 'bg-white dark:bg-gray-900'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,24 +65,24 @@ export default function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProp
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 dark:text-gray-200 hover:text-primary focus:outline-none"
+              className="inline-flex items-center justify-center p-3 rounded-md text-gray-800 dark:text-gray-200 hover:text-primary focus:outline-none"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
               {/* Hamburger icon */}
-              <div className="w-6 h-5 relative flex flex-col justify-between">
+              <div className="w-6 h-5 flex flex-col justify-center gap-1.5">
                 <span
-                  className={`w-full h-0.5 bg-current transform transition-all duration-300 ${
+                  className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${
                     isMenuOpen ? 'rotate-45 translate-y-2' : ''
                   }`}
                 />
                 <span
-                  className={`w-full h-0.5 bg-current transition-all duration-300 ${
+                  className={`block w-full h-0.5 bg-current transition-all duration-300 ${
                     isMenuOpen ? 'opacity-0' : ''
                   }`}
                 />
                 <span
-                  className={`w-full h-0.5 bg-current transform transition-all duration-300 ${
+                  className={`block w-full h-0.5 bg-current transform transition-all duration-300 origin-center ${
                     isMenuOpen ? '-rotate-45 -translate-y-2' : ''
                   }`}
                 />
