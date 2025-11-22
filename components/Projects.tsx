@@ -78,7 +78,7 @@ export default function Projects() {
             </div>
             <div className="flex-1">
               <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4 italic">
-                "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat."
+                &ldquo;Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.&rdquo;
               </p>
               <div>
                 <p className="font-bold text-gray-900 dark:text-white">Jonathan Diesel</p>

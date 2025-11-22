@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="text-center mb-16">
             <p className="text-primary font-medium mb-2">build everything</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              Let's discuss about your project and take it the next level.
+              Let&apos;s discuss about your project and take it the next level.
             </h2>
           </div>
         </AnimateOnScroll>
